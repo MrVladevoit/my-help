@@ -114,3 +114,50 @@ MyWebsite/
   |--index.html
 
 ```
+
+##Использование Цвета
+
+Полное руководство и все цвета **materialize** можно посмотреть по ссылке http://materializecss.com/color.html
+
+###Цвет фона
+
+Для цвета фона достаточно прописать название цвета **teal** и его оттенок **lighten-2**
+
+```html
+
+ <div class="card-panel teal lighten-2">This is a card panel with a teal lighten-2 class</div>
+
+```
+
+###Цвет текста
+
+Чтобы применить цвет текста, просто добавьте -text к классу цвета, как это:
+
+```html
+
+	<div class="card-panel">
+		<span class="blue-text text-darken-2">This is a card panel with dark blue text</span>
+	</div>
+
+```
+
+###Sass
+
+Для цвета фона, вы можете применить цвет просто путем расширения классов, как на примере ниже.
+
+```sass
+
+	.ilike-blue-container {
+		@extend .blue, .lighten-4;
+	}
+
+```
+Для изменения цвета текста, вы можете применить цвет просто путем расширения классов, как на примере ниже.
+
+```sass
+
+	.ilike-blue-container {
+		@extend .blue-text, .text-lighten-4;
+	}
+
+```
