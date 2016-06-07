@@ -271,23 +271,23 @@ Container - не является обязательным элементом с
 
 ###Размеры экранов
 
-	1.Mobile Devices <= 600px
+1.Mobile Devices <= 600px
 
-	Class Prefix - .s
+Class Prefix - .s
 
-	Container Width - 85%
+Container Width - 85%
 
-	2.Tablet Devices <= 992px
+2.Tablet Devices <= 992px
 
-	Class Prefix - .m
+Class Prefix - .m
 
-	Container Width - 85%
+Container Width - 85%
 
-	3.Desktop Devices > 992px
+3.Desktop Devices > 992px
 
-	Class Prefix - .l
+Class Prefix - .l
 
-	Container Width - 70%
+Container Width - 70%
 
 ###Адаптивные колонки
 
@@ -315,5 +315,210 @@ Container - не является обязательным элементом с
 		<div class="col s12 m6 l3"><p>s12 m6 l3</p></div>
 		<div class="col s12 m6 l3"><p>s12 m6 l3</p></div>
 	</div>
+
+```
+
+##Helpers
+
+###Выравнивание по вертикали
+
+Для выравнивания по вертикали достаточно добавить класс valign-wrapper
+
+```html
+
+	<div class="valign-wrapper">
+		<h5 class="valign">This should be vertically aligned</h5>
+	</div>
+
+```
+
+###Text Align / Выравнивание текста
+
+Для выравнивания текста и используем классы .left-align, .right-align and .center-align
+
+```html
+
+	<div>
+		<h5 class="left-align">This should be left aligned</h5>
+	</div>
+	<div>
+		<h5 class="right-align">This should be right aligned</h5>
+	</div>
+	<div>
+		<h5 class="center-align">This should be center aligned</h5>
+	</div>
+
+```
+
+###Quick Floats / быстрые обтекания
+
+```html
+
+	<div class="left">...</div>
+	<div class="right">...</div>
+
+```
+
+###Hiding Content / прячем контент
+
+**.hide** - скрыть на всех устройствах
+**.hide-on-small-only** - скрыть только на мобильных.
+**.hide-on-med-only** - скрыть на планшетах.
+**.hide-on-med-and-down** - скрыть на планшетах и устройствах с экраном меньше чем у планшетов.
+**.hide-on-med-and-up** - скрыть на планшетах и устройствах с экраном больше чем у планшетов.
+**.hide-on-large-only** - скрыть только на Destop.
+
+###Форматирование
+
+Если текст не влизает в контейнер, достаточно добавить класс **truncate**, и тогда мы увидм на конце такой результат.
+
+```html
+
+	<h4 class="truncate">This is an extremely long title that will be truncated</h4>
+
+```
+
+Результат : This is an extremely long title that will be ...
+
+###Анимация тени
+
+```html
+
+	<div class="card-panel hoverable"> Hoverable Card Panel</div>
+
+```
+
+##Media CSS
+
+###Изображения
+
+**Адаптивные изображения** - добавляем класс **.responsive-img** - для стилей адаптивных картинок max-width: 100% и height:auto.
+
+**Скругленные изображения** - class="circle"
+
+###Видео
+
+Исользуем класс **.video-container** для контейнера видео.
+
+```html
+
+	 <div class="video-container">
+		<iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+	</div>
+
+```
+Для адаптивности видео используем **.responsive-video**.
+
+##SASS
+
+###Переменные
+
+Чтобы заменить цветовую схему на стайте достатоно уже заменить значения в файле _variables.scss.
+
+```SASS
+
+	$primary-color: color("materialize-red", "lighten-2") !default;
+	$primary-color-light: false !default;
+	$primary-color-dark: false !default;
+	@if not $primary-color-light {
+		$primary-color-light: lighten($primary-color, 15%);
+	}
+	@if not $primary-color-dark {
+		$primary-color-dark: darken($primary-color, 15%);
+	}
+	$secondary-color: color("teal", "lighten-1") !default;
+	$success-color: color("green", "base") !default;
+	$error-color: color("red", "base") !default;
+
+	$link-color: color("light-blue", "darken-1") !default;
+
+	/*** More variables not shown here.. ***/
+
+```
+
+###Media Queries
+
+Маленькие экраны определены как имеющие максимальную ширину в 600px Средние экраны определяются как имеющие максимальную ширину в 992px Большой экран определены как имеющие мин ширину 993px
+
+```SASS
+
+ @media #{$small-and-down} {
+    // styles for small screens and down
+  }
+  @media #{$medium-and-up} {
+    // styles for medium screens and larger
+  }
+  @media #{$medium-and-down} {
+    // styles for medium screens and down
+  }
+  @media #{$large-and-up} {
+    // styles for large screens and up
+  }
+
+```
+
+###Prefixer
+
+Мы можем использовать встроенные миксины автопрефиксов
+
+В SASS:
+
+```SASS
+
+	@include transition(.3s);
+
+```
+
+Получим в CSS:
+
+```css
+
+	-webkit-transition: 0.3s;
+	  -moz-transition: 0.3s;
+	  -o-transition: 0.3s;
+	  -ms-transition: 0.3s;
+	  transition: 0.3s;
+
+```
+
+Все миксины:
+
+```SASS
+
+animation($args)
+  animation-delay($delay)
+  animation-direction($direction)
+  animation-duration($duration)
+  animation-fill-mode($mode)
+  animation-iteration-count($count)
+  animation-name($name)
+  animation-play-state($state)
+  animation-timing-function($function)
+  background-size($args)
+  box-sizing($args)
+      border-box()
+      content-box()
+  columns($args)
+      column-count($count)
+      column-gap($gap)
+      column-rule($args)
+      column-width($width)
+  gradient($default,$start,$stop)
+      linear-gradient-top($default,$color1,$stop1,$color2,$stop2,[$color3,$stop3,$color4,$stop4])
+      linear-gradient-left($default,$color1,$stop1,$color2,$stop2,[$color3,$stop3,$color4,$stop4])
+  transform($args)
+      transform-origin($args)
+      transform-style($style)
+      rotate($deg)
+      scale($factor)
+      translate($x,$y)
+      translate3d($x,$y,$z)
+      translateHardware($x,$y)
+  text-shadow($args)
+  transition($args)
+      transition-delay($delay)
+      transition-duration($duration)
+      transition-property($property)
+      transition-timing-function($function)
 
 ```
