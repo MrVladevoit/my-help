@@ -161,3 +161,159 @@ MyWebsite/
 	}
 
 ```
+
+##Grid / Сетка
+
+###Container
+
+Container - не является обязательным элементом сетки, но он позволяет нам центрировать основной блок, контент.Чтобы добавить контейнер просто положить содержимое внутри тега **<div>** с классом контейнера. Вот пример того, как ваша страница может быть настроена.
+
+```html
+
+	<body>
+		<div class="container">
+			<!-- Page Content goes here -->
+		</div>
+	</body>
+
+```
+
+###12 колонок
+
+Наша стандартная сетка имеет 12 колонок. Независимо от размера браузера, каждая из этих колонок всегда будет иметь одинаковую ширину.
+
+```html
+
+	<div class="row">
+		<div class="col s1">1</div>
+		<div class="col s1">2</div>
+		<div class="col s1">3</div>
+		<div class="col s1">4</div>
+		<div class="col s1">5</div>
+		<div class="col s1">6</div>
+		<div class="col s1">7</div>
+		<div class="col s1">8</div>
+		<div class="col s1">9</div>
+		<div class="col s1">10</div>
+		<div class="col s1">11</div>
+		<div class="col s1">12</div>
+	</div>
+
+```
+
+###Колонки находятся внутри Строк
+
+Помните, когда вы создаете макет, следует все столбцы добавить внутри строки, и что вы должны добавить класс Col к своему внутреннему **div**, чтобы использовать их как столбцы.
+
+```html
+
+	<div class="row">
+		<div class="col s12">This div is 12-columns wide</div>
+		<div class="col s6">This div is 6-columns wide</div>
+		<div class="col s6">This div is 6-columns wide</div>
+	</div>
+
+```
+
+###Смещения
+
+Чтобы сместить колонку на опрелеленно расстояние, можно использовать class **.offset-s2**. Данный класс сместит нашу колонку на малых экранов на 2 колонки правее.
+
+**Нужно запомнить, что s = small, m = medium, l = large. Это разные @media запросы, для разных экранов, разных устройств.**
+
+```html
+
+	<div class="row">
+		<div class="col s12"><span class="flow-text">This div is 12-columns wide on all screen sizes</span></div>
+		<div class="col s6 offset-s6"><span class="flow-text">6-columns (offset-by-6)</span></div>
+	</div>
+
+```
+
+###Push and Pull
+Вы можете с легкостью менять порядок колонок и толкать их или тянуть.
+
+```html
+
+	<div class="row">
+		<div class="col s7 push-s5"><span class="flow-text">This div is 7-columns wide on pushed to the right by 5-columns.</span></div>
+		<div class="col s5 pull-s7"><span class="flow-text">5-columns wide pulled to the left by 7-columns.</span></div>
+	</div>
+
+```
+
+###Создание Макетов
+
+**Section** - класс **секция** используется для разделения контента на секции.
+**Divider** - используется для добавления разделителей.
+
+```html
+
+	<div class="divider"></div>
+	<div class="section">
+		<h5>Section 1</h5>
+		<p>Stuff</p>
+	</div>
+	<div class="divider"></div>
+	<div class="section">
+		<h5>Section 2</h5>
+		<p>Stuff</p>
+	</div>
+	<div class="divider"></div>
+	<div class="section">
+		<h5>Section 3</h5>
+		<p>Stuff</p>
+	</div>
+
+```
+
+##Создание адаптивной разметки
+
+###Размеры экранов
+
+	1.Mobile Devices <= 600px
+
+	Class Prefix - .s
+
+	Container Width - 85%
+
+	2.Tablet Devices <= 992px
+
+	Class Prefix - .m
+
+	Container Width - 85%
+
+	3.Desktop Devices > 992px
+
+	Class Prefix - .l
+
+	Container Width - 70%
+
+###Адаптивные колонки
+
+
+```html
+
+	<div class="row">
+		<div class="grid-example col s12"><span class="flow-text">I am always full-width (col s12)</span></div>
+		<div class="grid-example col s12 m6"><span class="flow-text">I am full-width on mobile (col s12 m6)</span></div>
+	</div>
+
+```
+
+```html
+
+	<div class="row">
+		<div class="col s12"><p>s12</p></div>
+		<div class="col s12 m4 l2"><p>s12 m4</p></div>
+		<div class="col s12 m4 l8"><p>s12 m4</p></div>
+		<div class="col s12 m4 l2"><p>s12 m4</p></div>
+	</div>
+	<div class="row">
+		<div class="col s12 m6 l3"><p>s12 m6 l3</p></div>
+		<div class="col s12 m6 l3"><p>s12 m6 l3</p></div>
+		<div class="col s12 m6 l3"><p>s12 m6 l3</p></div>
+		<div class="col s12 m6 l3"><p>s12 m6 l3</p></div>
+	</div>
+
+```
