@@ -522,3 +522,118 @@ animation($args)
       transition-timing-function($function)
 
 ```
+
+##Тени
+
+Для тени мы используем **class="z-depth-2"** или @extend в SASS. z-depth - обозначает глубину.
+
+```html
+
+	<div class="col s12 m2">
+		<p class="z-depth-1">z-depth-1</p>
+	</div>
+	<div class="col s12 m2">
+		<p class="z-depth-2">z-depth-2</p>
+	</div>
+	<div class="col s12 m2">
+		<p class="z-depth-3">z-depth-3</p>
+	</div>
+	<div class="col s12 m2">
+		<p class="z-depth-4">z-depth-4</p>
+	</div>
+	<div class="col s12 m2">
+		<p class="z-depth-5">z-depth-5</p>
+	</div>
+
+```
+
+##Таблицы
+
+###Безграниыные таблицы
+
+Эти таблицы используются по умолчанию.
+
+```html
+
+	<table>
+		<thead>
+			<tr>
+				<th data-field="id">Name</th>
+				<th data-field="name">Item Name</th>
+				<th data-field="price">Item Price</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>Alvin</td>
+				<td>Eclair</td>
+				<td>$0.87</td>
+			</tr>
+			<tr>
+				<td>Alan</td>
+				<td>Jellybean</td>
+				<td>$3.76</td>
+			</tr>
+			<tr>
+				<td>Jonathan</td>
+				<td>Lollipop</td>
+				<td>$7.00</td>
+			</tr>
+		</tbody>
+	</table>
+
+```
+
+###Таблицы с границей
+
+Для границ нужно добавить **class="bordered"** к таблице.
+
+###Фон строк
+
+Нужно добавить **class="striped"** к таблице.
+
+###Подсвечивание строк таблицы при наведении
+
+Нужно добавить **class="highlight"** к таблице. При hover, подсвечивается строка таблицы.
+
+###Центрированная таблица
+
+Нужно добавить **class="centered"** к таблице.
+
+###Адаптивные таблицы
+
+Добавить класс = "responsive-table" к таблице тегов, чтобы сделать таблицу адаптивной.На мобильных устройствах появляется скролл горизонтальный.
+
+##Типографика
+
+###Roboto
+
+Стандартный шрифт для Материального дизайна - Roboto. Мы включили файлы шрифта в наш фреймворк.
+Удаление шрифта Roboto происходит заменной стилей тега html:
+
+```html
+
+	html {
+		font-family: GillSans, Calibri, Trebuchet, sans-serif;
+	}
+
+```
+
+###Blockquotes
+
+```html
+
+	<blockquote>
+      This is an example quotation that uses the blockquote tag.
+    </blockquote>
+
+```
+
+###Flow Text / проточный текст
+
+```html
+
+	<p class="flow-text">I am Flow Text</p>
+
+```
