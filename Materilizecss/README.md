@@ -5,8 +5,169 @@
 Materializecss.com - это фремворк material designer на SASS.
 
 1. Скачать
- + [Скачать и использовать](#Установка-GIT);
+ + [Скачать и использовать](#Скачать-и-использовать-materializecsscom);
+ + [CDN](#cdn);
+ + [Установить с NPM и Bower](#npm-and-bower);
 
+2.Запуск и использование **Materialize**
+ + [Запуск](#Запуск-html);
+ + [Ruby Gem, Meteor Package, Ember Package](#ruby-gem-meteor-package-ember-package);
+ + [Запуск используя sass](#Запуск-используя-sass);
+
+3.Использование Цвета
+ + [Цвет фона](#Цвет-фона);
+ + [SASS](#sass);
+
+4.Grid / Сетка
+ + [Container](#container);
+ + [12 колонок](#12-колонок);
+ + [Колонки находятся внутри строки](#Колонки-находятся-внутри-строки);
+ + [Смещения](#Смещения);
+ + [Push and Pull](#push-and-pull);
+ + [Создание Макетов](#Создание-Макетов);
+
+5.Создание адаптивной разметки
+ + [Размеры экранов](#Размеры-экранов);
+ + [Адаптивные колонки](#Адаптивные-колонки);
+
+6.Helpers
+ + [Выравнивание по вертикали](#Выравнивание-по-вертикали);
+ + [Text Align / Выравнивание текста](#text-align--Выравнивание-текста);
+ + [Quick Floats / быстрые обтекания](#quick-floats--быстрые-обтекания);
+ + [Hiding Content / прячем контент](#hiding-content--прячем-контент);
+ + [Форматирование](#Форматирование);
+ + [Анимация тени](#Анимация-тени);
+
+7.Media CSS
+ + [Изображения](#Изображения);
+ + [Видео](#Видео);
+
+8.SASS
+ + [SASS](#sass-1);
+ + [Media Queries](#media-queries);
+ + [Prefixer](#prefixer);
+
+9.Тени
+ + [Использование теней](#Тени);
+
+10.Таблицы
+ + [Безграниыные таблицы](#Таблицы);
+ + [Таблицы с границей](#Таблицы-с-границей);
+ + [Фон строк](#Фон-строк);
+ + [Центрированная таблица](#Центрированная-таблица);
+ + [Адаптивные таблицы](#Адаптивные-таблицы);
+
+11.Типографика
+ + [Roboto](#roboto);
+ + [Blockquotes](#blockquotes);
+
+12.Baget / значки уведомлений
+ + [Использование badget](#baget--значки-уведомлений);
+
+13.Buttons / Кнопки
+ + [Использование button](#buttons--Кнопки);
+ + [Округлые кнопки](#Округлые-кнопки);
+ + [Fixed Action Button](#fixed-action-button);
+ + [Horizontal FAB](#horizontal-fab);
+ + [Click-only FAB](#click-only-fab);
+ + [Flat](#Flat);
+ + [Submit Button](#submit-button);
+ + [Большие](#Большие);
+ + [Disabled](#Disabled);
+
+14.Breadcrumbs / Хлебные крошки
+ + [Использование Breadcrumbs](#breadcrumbs--Хлебные-крошки);
+
+15.Cards / Карточки
+ + [Стандартная карточка](#Стандартная-карточка);
+ + [Карточка с images](#Карточка с images);
+ + [Card Reveal / Анимация карточки](#card-reveal--Анимация-карточки);
+
+16.Chips / tags
+ + [Contacts](#Contacts);
+ + [Tags](#Tags);
+
+17.Collections
+ + [Использование Collections](#Collections);
+ + [Avatar Content](#avatar-content);
+
+18.Footer
+ + [Использование Footer](#Footer);
+ + [Прилипающий футер](#Прилипающий-футер);
+
+19.Form / Формы
+ + [Inputs](#input-fields);
+ + [Icon Prefixes / использование иконок](#icon-prefixes--использование-иконок);
+ + [Собственные ошибки и сообщения](#Собственные-ошибки-и-сообщения);
+ + [Select](#select);
+ + [Radio Buttons](#radio-buttons);
+ + [Чекбоксы](#Чекбоксы);
+ + [Switches](#switches);
+ + [File Input](#file-input);
+ + [Range](#range);
+ + [Date Picker](#date-picker);
+ + [Счетчик символов](#Счетчик-символов);
+
+20.Icons / Иконки
+ + [Использование Icons](#icons--Иконки);
+
+21.Navbar / меню
+ + [Ссылки справа](#Ссылки-справа);
+ + [Ссылки слева](#Ссылки-слева);
+ + [Центрирование лого](#Центрирование-лого);
+ + [Fixed](#Зафиксированная-панель-навигации);
+ + [Выпадающее меню на панели навигации](#Выпадающее-меню-на-панели-навигации);
+ + [Мобильное меню](#Мобильное-меню);
+
+22.Pagination
+ + [Использование Pagination](#pagination);
+
+23.Preloader
+ + [Linear - progress bar](#linear---progress-bar);
+ + [Циркулярный](#Циркулярный);
+ + [Circular Flashing Colors / Смешенные цвета](#circular-flashing-colors--Смешенные-цвета);
+
+24.Collapsible
+ + [Collapsible](#collapsible);
+
+25.Dialogs
+ + [Toasts](#toasts);
+ + [Tooltips](#tooltips);
+
+26.Dropdown
+ + [Dropdown - выпадающее списки](#dropdown);
+ + [Tooltips](#tooltips);
+ + [Настройки](#Настройки);
+ + [jQuery Plugin Initialization](#jquery-plugin-initialization);
+
+27.Media : Zoom image, SLIDER, CAROUSEL
+ + [Material Box](#material-box);
+ + [Slider](#slider);
+ + [Carousel](#carousel);
+
+28.Modals
+ + [Использование modals](#modals);
+ + [Настройки](#Настройки-1);
+
+29.Parallax
+ + [Использование Parallax](#parallax);
+ + [Demo](#demo);
+
+30.ScrollFire / Transitions
+ + [Использование ScrollFire](#scrollFire);
+ + [Использование Transitions](#transitions);
+
+31.Scrollspy
+ + [Использование Scrollspy](#scrollspy);
+
+32.Tabs / Табы
+ + [Использование Tabs / Табы](#tabs--Табы);
+
+
+33.Waves / Волна
+ + [Применение волн](#Применение-волн);
+ + [Нестандартные цвета](#Нестандартные-цвета);
+ + [Circle](#circle);
 
 ## Скачать и использовать Materializecss.com
 
@@ -201,9 +362,9 @@ Container - не является обязательным элементом с
 
 ```
 
-###Колонки находятся внутри Строк
+###Колонки находятся внутри строки
 
-Помните, когда вы создаете макет, следует все столбцы добавить внутри строки, и что вы должны добавить класс Col к своему внутреннему **div**, чтобы использовать их как столбцы.
+Помните, когда вы создаете макет, следует все столбцы добавлять в строки.
 
 ```html
 
@@ -271,19 +432,19 @@ Container - не является обязательным элементом с
 
 ###Размеры экранов
 
-1.Mobile Devices <= 600px
+*1.Mobile Devices <= 600px*
 
 Class Prefix - .s
 
 Container Width - 85%
 
-2.Tablet Devices <= 992px
+*2.Tablet Devices <= 992px*
 
 Class Prefix - .m
 
 Container Width - 85%
 
-3.Desktop Devices > 992px
+*3.Desktop Devices > 992px*
 
 Class Prefix - .l
 
@@ -392,9 +553,9 @@ Container Width - 70%
 
 ###Изображения
 
-**Адаптивные изображения** - добавляем класс **.responsive-img** - для стилей адаптивных картинок max-width: 100% и height:auto.
+**Адаптивные изображения** - добавляем класс **.responsive-img** - для стилей адаптивных картинок **max-width: 100%** и **height:auto**.
 
-**Скругленные изображения** - class="circle"
+**Скругленные изображения** - **class="circle"**.
 
 ###Видео
 
@@ -603,7 +764,7 @@ animation($args)
 
 ###Адаптивные таблицы
 
-Добавить класс = "responsive-table" к таблице тегов, чтобы сделать таблицу адаптивной.На мобильных устройствах появляется скролл горизонтальный.
+Добавить класс = **"responsive-table"** к таблице тегов, чтобы сделать таблицу адаптивной.На мобильных устройствах появляется скролл горизонтальный.
 
 ##Типографика
 
@@ -1815,7 +1976,7 @@ HTML - Структура:
 
 ##Dropdown
 
-Чтобы добавить выпдающий список для кнопки, добавим **data-activates** в **ul** tag. Для разделителей **<li class="divider"></li>** tag.
+Чтобы добавить выпдающий список для кнопки, добавим **data-activates** в **ul** tag. Для разделителей **class="divider"**.
 
 ```html
 
