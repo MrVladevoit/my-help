@@ -4,12 +4,12 @@
 
 Materializecss.com - это фремворк material designer на SASS.
 
-1. Скачать
+1. Скачать фреймворк
  + [Скачать и использовать](#Скачать-и-использовать-materializecsscom);
  + [CDN](#cdn);
  + [Установить с NPM и Bower](#npm-and-bower);
 
-2.Запуск и использование **Materialize**
+2.Запуск и использование Materialize
  + [Запуск](#Запуск-html);
  + [Ruby Gem, Meteor Package, Ember Package](#ruby-gem-meteor-package-ember-package);
  + [Запуск используя sass](#Запуск-используя-sass);
