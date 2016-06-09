@@ -10,7 +10,7 @@ Materializecss.com - это фремворк material designer на SASS.
 
 ## Скачать и использовать Materializecss.com
 
-Для того, чтобы начать переходим по ссылке : + [http://materializecss.com/getting-started.html](http://materializecss.com/getting-started.html)
+Для того, чтобы начать переходим по ссылке : [http://materializecss.com/getting-started.html](http://materializecss.com/getting-started.html)
 
 ###CDN
 
@@ -640,7 +640,7 @@ animation($args)
 
 ##Baget / значки уведомлений
 
- + [Прочитать и посмотреть пример](http://materializecss.com/badges.html);
+[Прочитать и посмотреть пример](http://materializecss.com/badges.html);
 
 
 ```html
@@ -657,7 +657,7 @@ Badget добавляется так же и в выпадающие списк�
 
 ##Buttons / Кнопки
 
- + [Прочитать и посмотреть пример](http://materializecss.com/buttons.html);
+[Прочитать и посмотреть пример](http://materializecss.com/buttons.html);
 
 Кнопки могут быть и с иконками material design:
 
@@ -802,7 +802,7 @@ Badget добавляется так же и в выпадающие списк�
 
 ##Cards / Карточки
 
- + [Прочитать и посмотреть пример](http://materializecss.com/cards.html);
+[Прочитать и посмотреть пример](http://materializecss.com/cards.html);
 
 ###Стандартная карточка
 
@@ -826,7 +826,7 @@ Badget добавляется так же и в выпадающие списк�
 
 ```
 
-###Карточка с imgages
+###Карточка с images
 
 
 ```html
@@ -932,7 +932,7 @@ Chips следует использовать для тегов и их удал
 
 Колекции позволяют объеденить список групп вместе.
 
- + [Прочитать и посмотреть пример](http://materializecss.com/collections.html);
+[Прочитать и посмотреть пример](http://materializecss.com/collections.html);
 
 
 ```html
@@ -1036,9 +1036,9 @@ Chips следует использовать для тегов и их удал
 
 ```
 
-##Form
+##Form / Формы
 
- + [Прочитать и посмотреть пример](http://materializecss.com/forms.html);
+[Прочитать и посмотреть пример](http://materializecss.com/forms.html);
 
 ###Input fields
 
@@ -1384,7 +1384,11 @@ $(document).ready(function() {
 
 Подключение :
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```html
+
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+````
 
 Используем html:
 
@@ -1396,7 +1400,7 @@ $(document).ready(function() {
 
 ##Navbar
 
- + [Прочитать и посмотреть пример](http://materializecss.com/navbar.html);
+[Прочитать и посмотреть пример](http://materializecss.com/navbar.html);
 
 ###Ссылки справа
 
@@ -1453,7 +1457,7 @@ $(document).ready(function() {
 
 Для активной ссылки в меню достаточно добавить class **li.active**.
 
- + [Прочитать и посмотреть пример](http://materializecss.com/navbar.html);
+[Прочитать и посмотреть пример](http://materializecss.com/navbar.html);
 
 ###Зафиксированная панель навигации
 
@@ -1517,7 +1521,7 @@ $(document).ready(function() {
 
 ###Мобильное меню
 
- + [Прочитать и посмотреть пример](http://materializecss.com/navbar.html);
+[Прочитать и посмотреть пример](http://materializecss.com/navbar.html);
 
 ```html
 
@@ -1545,5 +1549,840 @@ $(document).ready(function() {
 ```js
 
 	$(".button-collapse").sideNav()
+
+```
+
+##Pagination
+
+```html
+
+  <ul class="pagination">
+    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    <li class="active"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!">3</a></li>
+    <li class="waves-effect"><a href="#!">4</a></li>
+    <li class="waves-effect"><a href="#!">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  </ul>
+
+```
+
+##Preloader
+
+[Прочитать и посмотреть пример](http://materializecss.com/preloader.html);
+
+###Linear - progress bar
+
+** Determinate **
+
+```html
+
+  <div class="progress">
+      <div class="determinate" style="width: 70%"></div>
+  </div>
+
+```
+
+** Indeterminate **
+
+```html
+
+  <div class="progress">
+      <div class="indeterminate"></div>
+  </div>
+
+```
+
+###Циркулярный
+
+```html
+
+ <div class="preloader-wrapper big active">
+    <div class="spinner-layer spinner-blue-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="preloader-wrapper active">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="preloader-wrapper small active">
+    <div class="spinner-layer spinner-green-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+```
+
+###Circular Flashing Colors / Смешенные цвета
+
+```html
+
+ <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-red">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-yellow">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-green">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+
+```
+
+##Collapsible
+
+Collapsible используется для того, чтобы скрыть/показать контент при клике
+
+[Прочитать и посмотреть пример](http://materializecss.com/collapsible.html);
+
+HTML - Структура:
+
+```html
+
+  <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+  </ul>
+
+```
+
+```js
+
+  $(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });
+
+```
+
+###Аккордион и Expandable
+
+Используется 2 вида меню Collapsible:
+
+**Аккордион**
+
+```html
+
+  <ul class="collapsible" data-collapsible="accordion">
+
+```
+
+**Expandable**
+
+```html
+
+  <ul class="collapsible" data-collapsible="expandable">
+
+```
+
+##Dialogs
+
+[Прочитать и посмотреть пример](http://materializecss.com/dialogs.html);
+
+###Toasts
+
+Очень удобные тосты для отправки сообщения пользователю.
+
+```js
+
+ // Materialize.toast(message, displayLength, className, completeCallback);
+  Materialize.toast('I am a toast!', 4000) // 4000 is the duration of the toast
+
+```
+
+```html
+
+ <a class="btn" onclick="Materialize.toast('I am a toast', 4000)">Toast!</a>
+
+```
+
+####Custom HTML
+
+```js
+
+  var $toastContent = $('<span>I am toast content</span>');
+  Materialize.toast($toastContent, 5000);
+
+```
+
+####Callback
+
+```html
+
+	<a class="btn" onclick="Materialize.toast('I am a toast', 4000,'',function(){alert('Your toast was dismissed')})">Toast!</a>
+
+```
+
+####Styling Toasts
+
+```js
+
+	Materialize.toast('I am a toast!', 3000, 'rounded') // 'rounded' is the class I'm applying to the toast
+
+```
+
+###Tooltips
+
+```html
+
+	<!-- data-position can be : bottom, top, left, or right -->
+	<!-- data-delay controls delay before tooltip shows (in milliseconds)-->
+	<a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="I am tooltip">Hover me!</a>
+
+```
+```js
+
+  $(document).ready(function(){
+    $('.tooltipped').tooltip({delay: 50});
+  });
+
+```
+
+**Removal**
+
+```js
+
+  // This will remove the tooltip functionality for the buttons on this page
+  $('.tooltipped').tooltip('remove');
+
+```
+
+##Dropdown
+
+Чтобы добавить выпдающий список для кнопки, добавим **data-activates** в **ul** tag. Для разделителей **<li class="divider"></li>** tag.
+
+```html
+
+  <!-- Dropdown Trigger -->
+  <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Drop Me!</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+  </ul>
+
+```
+
+###Настройки
+
+	**Появление** (induration) - указываем продолжительность для появления в миллисикундах. Default:300
+
+	**Изчезание** (outduration) - указываем продолжительность для изчезания в миллисикундах. Default:225
+
+	**Constrainwidth** - выпдающий список равен по ширине кнопки.Default:true
+
+	**Hover** - выпдающий список при **hover**.Default:false
+
+	**Gutter** - это определяет расстояние от края выровненного.Default:0
+
+	**Beloworigin** - это определяет будет ли выпдающий список показан ниже кнопки.Default:false
+
+	**Alignment** - выпадающее меню выровнено по умолчанию "По левому краю".Default:'left'
+
+###jQuery Plugin Initialization
+
+```js
+
+  $('.dropdown-button').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrain_width: false, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: 0, // Spacing from edge
+      belowOrigin: false, // Displays dropdown below the button
+      alignment: 'left' // Displays dropdown with edge aligned to the left of button
+    }
+  );
+
+```
+
+##Media : Zoom image, SLIDER, CAROUSEL
+
+###Material Box
+
+[Прочитать и посмотреть пример](http://materializecss.com/media.html)
+
+**Material Box** представляет собой реализацию материал дизайна плагина **Lightbox**. Когда пользователь нажимает на изображение, оно увеличивается. **Material Box** центрирует изображение и увеличивает его в модальном окне. Чтобы закрыть изображение, пользователь может либо нажать на изображение снова, прокрутите в сторону, или нажать клавишу **ESC**.
+
+```html
+
+	<img class="materialboxed" width="650" src="images/sample-1.jpg">
+
+```
+```js
+
+  $(document).ready(function(){
+    $('.materialboxed').materialbox();
+  });
+
+```
+
+####Подписи
+
+Подписи изображений задаются через атрибут **data-caption**.
+
+```html
+
+	<img class="materialboxed" data-caption="A picture of some deer and tons of trees" width="250" src="http://th01.deviantart.net/fs70/PRE/i/2013/126/1/e/nature_portrait_by_pw_fotografie-d63tx0n.jpg">
+
+```
+
+###Slider
+
+[Прочитать и посмотреть пример](http://materializecss.com/media.html#slider)
+
+Cлайдер представляет собой простой и элегантный **slider** изображений. Заголовки можно задать, как самостоятельные элементы с анимацией. Внизу добавляется пагинация слайдера.
+
+NOTE: Слайдер использует hummer js для точ скринов
+
+```html
+
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+```
+
+###Fullscreen Slider
+
+[Прочитать и посмотреть пример](http://materializecss.com/fullscreen-slider-demo.html)
+
+**jQuery Initialization**
+
+```js
+
+    $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+
+```
+
+####jQuery Plugin Options
+
+**Indicators** - индикаторы слайдера. Default: True.
+
+**Height** - высота слайдера. Default: 400.
+
+**Transition** - время анимации плавного перехода слайдов. Default: 500.
+
+**Interval** - время плавного перехода слайдов. Default: 6000.
+
+####jQuery Plugin Methods
+
+Есть методы, чтобы сделать паузу, запуск, переход к следующему или перемещения к предыдущему слайду.
+
+```js
+
+// Pause slider
+$('.slider').slider('pause');
+// Start slider
+$('.slider').slider('start');
+// Next slide
+$('.slider').slider('next');
+// Previous slide
+$('.slider').slider('prev');
+
+```
+
+###Carousel
+
+Так же имеется отдельня привлекательная карусель.
+
+[Прочитать и посмотреть пример](http://materializecss.com/media.html#carousel)
+
+```html
+
+  <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/250/250/nature/1"></a>
+    <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/250/250/nature/2"></a>
+    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/250/250/nature/3"></a>
+    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/250/250/nature/4"></a>
+    <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/250/250/nature/5"></a>
+  </div>
+
+  <div class="carousel carousel-slider">
+    <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/800/400/food/1"></a>
+    <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/800/400/food/2"></a>
+    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/800/400/food/3"></a>
+    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/800/400/food/4"></a>
+  </div>
+
+```
+
+```js
+
+    $(document).ready(function(){
+      $('.carousel').carousel();
+    });
+
+```
+
+####jQuery Plugin Options
+
+**time_constant** - время перехода. Default: 200
+
+**dist** - перспектива увеличения. Если 0, то все элементы имеют одинаковый размер. Default: -100
+
+**shift (сдвиг)** - установите интервал центрального пункта. Default: 0
+
+**padding** - установить padding между пунктами центра. Default: 0
+
+**full_width** - на всю ширину.Default: false
+
+####jQuery Plugin Methods
+
+```js
+
+// Next slide
+$('.carousel').carousel('next');
+$('.carousel').carousel('next', [3]); // Move next n times.
+// Previous slide
+$('.carousel').carousel('prev');
+$('.carousel').carousel('prev', [4]); // Move prev n times.
+
+````
+
+##Modals
+
+Используйте модальные окна для сообщения пользователям информации.Для модальной кнопки достаточно добавить id модального окна, для модального окна класс **.modal**, а для кнопки закрытия **.modal-close**
+
+**Modals HTML Structure**
+
+```html
+
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+
+```
+
+**Modals with Fixed Footer**
+
+Для модального окна добавляем класс **.modal-fixed-footer**.
+
+```html
+
+  <!-- Modal Trigger -->
+  <a class="modal-trigger waves-effect waves-light btn" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+    </div>
+  </div>
+
+
+```
+
+**Bottom Sheet Modals**
+
+Модальные окна , прилпающие к низу.
+
+Bottom Sheet Modals
+
+```html
+
+  <!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+```
+**Modals with Button trigger**
+
+```html
+
+ <!-- Modal Trigger -->
+  <button data-target="modal1" class="btn modal-trigger">Modal</button>
+
+```
+
+**jQuery Plugin Initialization**
+
+```js
+
+  $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+
+```
+
+```js
+
+ $('#modal1').openModal();
+
+```
+```js
+
+	$('#modal1').closeModal();
+
+```
+
+####Настройки
+
+```js
+
+  $('.modal-trigger').leanModal({
+      dismissible: true, // Modal can be dismissed by clicking outside of the modal
+      opacity: .5, // Opacity of modal background
+      in_duration: 300, // Transition in duration
+      out_duration: 200, // Transition out duration
+      ready: function() { alert('Ready'); }, // Callback for Modal open
+      complete: function() { alert('Closed'); } // Callback for Modal close
+    }
+  );
+
+```
+
+##Parallax
+
+[Прочитать и посмотреть пример](http://materializecss.com/parallax.html)
+
+###Parallax HTML Structure
+
+```html
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="images/parallax1.jpg"></div>
+    </div>
+
+```
+```js
+
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+
+```
+
+```css
+
+	.parallax-container {
+      height: "your height here";
+    }
+
+```
+
+###Demo
+
+[Посмотреть demo](http://materializecss.com/parallax-demo.html)
+
+**Parallax Demo HTML**
+
+```html
+
+  <div class="parallax-container">
+    <div class="parallax"><img src="images/parallax1.jpg"></div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header">Parallax</h2>
+      <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="images/parallax2.jpg"></div>
+  </div>
+
+```
+
+##Pushpin - прикрепить блок при скролле с опделенного момента до другого позиционирования.
+
+```js
+
+  $(document).ready(function(){
+    $('.tabs-wrapper .row').pushpin({ top: $('.tabs-wrapper').offset().top });
+  });
+
+```
+###CSS Classes
+
+```css
+
+  // Class for when element is above threshold
+  .pin-top {
+    position: relative;
+  }
+
+  // Class for when element is below threshold
+  .pin-bottom {
+    position: relative;
+  }
+
+  // Class for when element is pinned
+  .pinned {
+    position: fixed !important;
+  }
+
+```
+
+###jQuery Plugin Options
+
+**Top** - Расстояние в пикселях от верхней границы страницы, где элемент станет фиксированным. (Default: 0)
+
+**Bottom** - Расстояние в пикселях от верхней границы страницы, где элемент перестанет быть фиксированным. (Default: infinity)
+
+**Offset** - Отступ от верхней границы окна, на которой будет фиксироваться элемент. (Default: 0)
+
+##ScrollFire
+
+Действия при прокрутке , скролла страницы. Это могу быть анимации, сообщения и тп.
+
+##Scrollspy
+
+Следит за контентом и отмечает активным классом пункты меню
+
+###Table of Contents Structure
+
+```html
+
+  <div class="row">
+    <div class="col s12 m9 l10">
+      <div id="introduction" class="section scrollspy">
+        <p>Content </p>
+      </div>
+
+      <div id="structure" class="section scrollspy">
+        <p>Content </p>
+      </div>
+
+      <div id="initialization" class="section scrollspy">
+        <p>Content </p>
+      </div>
+    </div>
+    <div class="col hide-on-small-only m3 l2">
+      <ul class="section table-of-contents">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#structure">Structure</a></li>
+        <li><a href="#initialization">Intialization</a></li>
+      </ul>
+    </div>
+  </div>
+
+```
+```js
+
+  $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+
+```
+
+##Tabs / Табы
+
+###Tabs HTML Structure
+
+```html
+
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a href="#test1">Test 1</a></li>
+        <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+        <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+        <li class="tab col s3"><a href="#test4">Test 4</a></li>
+      </ul>
+    </div>
+    <div id="test1" class="col s12">Test 1</div>
+    <div id="test2" class="col s12">Test 2</div>
+    <div id="test3" class="col s12">Test 3</div>
+    <div id="test4" class="col s12">Test 4</div>
+  </div>
+
+```
+```js
+
+  $(document).ready(function(){
+    $('ul.tabs').tabs();
+  });
+
+```
+```js
+
+  $(document).ready(function(){
+    $('ul.tabs').tabs('select_tab', 'tab_id');
+  });
+
+```
+
+##Transitions
+
+Этот плагин подобен ScrollFire. При клике на кнопку , элементы плавно появляются.
+
+[Посмотреть demo](http://materializecss.com/transitions.html)
+
+##Waves / Волна
+
+###Применение волн
+
+Добавляем класс к кнопкам **.waves-effect** для добавления волны при клике.
+```html
+
+ <a class="waves-effect waves-light btn-large" href="#">Wave</a>
+
+```
+####Нестандартные цвета
+
+Для добавления цвета волны используем класс **waves- + цвет**
+
+```html
+
+ <a href="#!" class="btn waves-effect waves-teal">Send</a>
+
+```
+
+Если нужен свой цвет. Пишем CSS:
+
+```css
+
+    /*
+    When creating your CSS selector,
+    change "brown" to something of your choosing
+    */
+    .waves-effect.waves-brown .waves-ripple {
+     /* The alpha value allows the text and background color
+     of the button to still show through. */
+      background-color: rgba(121, 85, 72, 0.65);
+    }
+
+```
+
+###Circle
+
+Добавить класс для круглых кнопок **waves-circle**.
+
++ Default
+
++ waves-light
+
+```html
+
+  <a href="#!" class="waves-effect waves-circle waves-light btn-floating secondary-content">
+    <i class="material-icons">add</i>
+  </a>
 
 ```
