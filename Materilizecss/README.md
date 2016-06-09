@@ -10,7 +10,7 @@ Materializecss.com - это фремворк material designer на SASS.
 
 ## Скачать и использовать Materializecss.com
 
-Для того, чтобы начать переходим по ссылке : http://materializecss.com/getting-started.html
+Для того, чтобы начать переходим по ссылке : + [http://materializecss.com/getting-started.html](http://materializecss.com/getting-started.html)
 
 ###CDN
 
@@ -635,5 +635,915 @@ animation($args)
 ```html
 
 	<p class="flow-text">I am Flow Text</p>
+
+```
+
+##Baget / значки уведомлений
+
+ + [Прочитать и посмотреть пример](http://materializecss.com/badges.html);
+
+
+```html
+
+	<div class="collection">
+		<a href="#!" class="collection-item">Alan<span class="badge">1</span></a>
+		<a href="#!" class="collection-item">Alan<span class="new badge">4</span></a>
+		<a href="#!" class="collection-item">Alan</a>
+		<a href="#!" class="collection-item">Alan<span class="badge">14</span></a>
+	</div>
+
+```
+Badget добавляется так же и в выпадающие списки Dropdown, и в Navbar.
+
+##Buttons / Кнопки
+
+ + [Прочитать и посмотреть пример](http://materializecss.com/buttons.html);
+
+Кнопки могут быть и с иконками material design:
+
+```html
+
+	<a class="waves-effect waves-light btn">button</a>
+	<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+	<a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
+
+```
+###Округлые кнопки
+
+```html
+
+	<a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+
+```
+
+###Fixed Action Button
+
+Кнопка с фиксированным положением, в которой есть еще кнопки с дополнительными действиями.
+
+```html
+
+	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+	    <a class="btn-floating btn-large red">
+	      <i class="large material-icons">mode_edit</i>
+	    </a>
+	    <ul>
+	      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+	      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+	      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+	      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+	    </ul>
+	  </div>
+
+````
+
+```js
+
+	$('.fixed-action-btn').openFAB();
+
+```
+```js
+
+	$('.fixed-action-btn').closeFAB();
+
+```
+
+###Horizontal FAB
+
+```html
+
+	<div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+	    <a class="btn-floating btn-large red">
+	      <i class="large material-icons">mode_edit</i>
+	    </a>
+	    <ul>
+	      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+	      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+	      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+	      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+	    </ul>
+	  </div>
+
+```
+###Click-only FAB
+
+```html
+
+	<div class="fixed-action-btn horizontal click-to-toggle" style="bottom: 45px; right: 24px;">
+		<a class="btn-floating btn-large red">
+		  <i class="material-icons">menu</i>
+		</a>
+		<ul>
+		  <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+		  <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+		  <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+		  <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+		</ul>
+	</div>
+
+```
+
+###Flat
+
+Прозрачные кнопки используются для уменьшения чрезмерного наслоения. Например, эти кнопки, как правило, используются для действий внутри **card** или **modal**, так чтобы было не слишком много перекрывающихся теней.
+
+```html
+
+	<a class="waves-effect waves-teal btn-flat">Button</a>
+
+```
+
+###Submit Button
+
+```html
+
+	<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+		<i class="material-icons right">send</i>
+	</button>
+
+```
+
+###Большие
+
+```html
+
+	<a class="waves-effect waves-light btn-large">Button</a>
+	<a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a>
+	<a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>button</a>
+
+```
+
+###Disabled
+
+```html
+
+	<a class="btn-large disabled">Button</a>
+	<a class="btn disabled">Button</a>
+	<a class="btn-flat disabled">Button</a>
+	<a class="btn-floating disabled"><i class="material-icons">add</i></a>
+
+```
+
+##Breadcrumbs / Хлебные крошки
+
+```html
+
+  <nav>
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <a href="#!" class="breadcrumb">First</a>
+        <a href="#!" class="breadcrumb">Second</a>
+        <a href="#!" class="breadcrumb">Third</a>
+      </div>
+    </div>
+  </nav>
+
+
+```
+
+##Cards / Карточки
+
+ + [Прочитать и посмотреть пример](http://materializecss.com/cards.html);
+
+###Стандартная карточка
+
+```html
+
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+              <span class="card-title">Card Title</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+```
+
+###Карточка с imgages
+
+
+```html
+
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/sample-1.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+```
+
+###Card Reveal / Анимация карточки
+
+
+```html
+
+ <div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/office.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+  </div>
+
+```
+
+###Размеры карточки
+
+**Small**, **Medium**, **Large**
+
+```html
+
+	<div class="card small">
+		<!-- Card Content -->
+	</div>
+
+```
+
+###Card Panel
+
+```html
+
+   <div class="row">
+      <div class="col s12 m5">
+        <div class="card-panel teal">
+          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+          </span>
+        </div>
+      </div>
+    </div>
+
+```
+
+##Chips
+
+Chips следует использовать для тегов и их удаления.
+
+###Contacts
+
+
+```html
+
+  <div class="chip">
+    <img src="images/yuna.jpg" alt="Contact Person">
+    Jane Doe
+  </div>
+
+```
+
+###Tags
+
+
+```html
+
+  <div class="chip">
+    Tag
+    <i class="material-icons">close</i>
+  </div>
+
+```
+
+##Collections
+
+Колекции позволяют объеденить список групп вместе.
+
+ + [Прочитать и посмотреть пример](http://materializecss.com/collections.html);
+
+
+```html
+
+    <ul class="collection">
+      <li class="collection-item">Alvin</li>
+      <li class="collection-item">Alvin</li>
+      <li class="collection-item">Alvin</li>
+      <li class="collection-item">Alvin</li>
+    </ul>
+
+```
+
+###Avatar Content
+
+```html
+
+  <ul class="collection">
+    <li class="collection-item avatar">
+      <img src="images/yuna.jpg" alt="" class="circle">
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle">folder</i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle green">insert_chart</i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+    <li class="collection-item avatar">
+      <i class="material-icons circle red">play_arrow</i>
+      <span class="title">Title</span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+    </li>
+  </ul>
+
+```
+##Footer
+
+```html
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
+
+```
+
+###Прилипающий футер
+
+Он не работает в IE, так как использует FlexBox
+
+```css
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+```
+
+##Form
+
+ + [Прочитать и посмотреть пример](http://materializecss.com/forms.html);
+
+###Input fields
+
+Для импутов используем классы .input-field.Валидания на HTML5 исопльзует такие классы и стили valid, invalid, validate.
+
+
+```html
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+          <label for="disabled">Disabled</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+```
+
+###Icon Prefixes / использование иконок
+
+```html
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate">
+          <label for="icon_telephone">Telephone</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+```
+
+###Собственные ошибки и сообщения
+
+Мы можем добавлять пользовательское сообщение ошибки или успеха ввода данных - **data-error** или **data-success**.
+
+```html
+
+  <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email" data-error="wrong" data-success="right">Email</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+```
+
+###Select
+
+```html
+
+  <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Select</label>
+  </div>
+
+  <div class="input-field col s12">
+    <select multiple>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Multiple Select</label>
+  </div>
+
+  <div class="input-field col s12">
+    <select multiple>
+      <optgroup label="team 1">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+      </optgroup>
+      <optgroup label="team 2">
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+      </optgroup>
+    </select>
+    <label>Optgroups</label>
+  </div>
+
+  <div class="input-field col s12 m6">
+    <select class="icons">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="" data-icon="images/sample-1.jpg" class="circle">example 1</option>
+      <option value="" data-icon="images/office.jpg" class="circle">example 2</option>
+      <option value="" data-icon="images/yuna.jpg" class="circle">example 1</option>
+    </select>
+    <label>Images in select</label>
+  </div>
+  <div class="input-field col s12 m6">
+    <select class="icons">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="" data-icon="images/sample-1.jpg" class="left circle">example 1</option>
+      <option value="" data-icon="images/office.jpg" class="left circle">example 2</option>
+      <option value="" data-icon="images/yuna.jpg" class="left circle">example 3</option>
+    </select>
+    <label>Images in select</label>
+  </div>
+
+  <label>Browser Select</label>
+  <select class="browser-default">
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+
+```
+```js
+
+$(document).ready(function() {
+    $('select').material_select();
+  });
+
+```
+
+###Radio Buttons
+
+```html
+
+ <form action="#">
+    <p>
+      <input name="group1" type="radio" id="test1" />
+      <label for="test1">Red</label>
+    </p>
+    <p>
+      <input name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>
+    <p>
+      <input class="with-gap" name="group1" type="radio" id="test3"  />
+      <label for="test3">Green</label>
+    </p>
+      <p>
+        <input name="group1" type="radio" id="test4" disabled="disabled" />
+        <label for="test4">Brown</label>
+    </p>
+  </form>
+
+```
+
+###Чекбоксы
+
+```html
+
+  <form action="#">
+    <p>
+      <input type="checkbox" id="test5" />
+      <label for="test5">Red</label>
+    </p>
+    <p>
+      <input type="checkbox" id="test6" checked="checked" />
+      <label for="test6">Yellow</label>
+    </p>
+    <p>
+      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+      <label for="filled-in-box">Filled in</label>
+    </p>
+    <p>
+      <input type="checkbox" id="indeterminate-checkbox" />
+      <label for="indeterminate-checkbox">Indeterminate Style</label>
+    </p>
+    <p>
+      <input type="checkbox" id="test7" checked="checked" disabled="disabled" />
+      <label for="test7">Green</label>
+    </p>
+      <p>
+        <input type="checkbox" id="test8" disabled="disabled" />
+        <label for="test8">Brown</label>
+    </p>
+  </form>
+
+```
+
+###Switches
+
+```html
+
+  <!-- Switch -->
+  <div class="switch">
+    <label>
+      Off
+      <input type="checkbox">
+      <span class="lever"></span>
+      On
+    </label>
+  </div>
+
+  <!-- Disabled Switch -->
+  <div class="switch">
+    <label>
+      Off
+      <input disabled type="checkbox">
+      <span class="lever"></span>
+      On
+    </label>
+  </div>
+
+```
+
+###File Input
+
+```html
+
+  <form action="#">
+    <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <input type="file">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+  </form>
+
+```
+
+###Range
+
+```js
+
+  var slider = document.getElementById('test5');
+  noUiSlider.create(slider, {
+   start: [20, 80],
+   connect: true,
+   step: 1,
+   range: {
+     'min': 0,
+     'max': 100
+   },
+   format: wNumb({
+     decimals: 0
+   })
+  });
+
+```
+
+**HTML5 Range**
+
+```html
+
+  <form action="#">
+    <p class="range-field">
+      <input type="range" id="test5" min="0" max="100" />
+    </p>
+  </form>
+
+```
+
+###Date Picker
+
+```html
+
+	<input type="date" class="datepicker">
+
+```
+
+```js
+
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+
+```
+
+###Счетчик символов
+
+```html
+
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="input_text" type="text" length="10">
+            <label for="input_text">Input text</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea" length="120"></textarea>
+            <label for="textarea1">Textarea</label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+```
+
+```js
+
+  $(document).ready(function() {
+    $('input#input_text, textarea#textarea1').characterCounter();
+  });
+
+```
+
+##Icons / Иконки
+
+Подключение :
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+Используем html:
+
+```html
+
+	<i class="material-icons">add</i>
+
+```
+
+##Navbar
+
+ + [Прочитать и посмотреть пример](http://materializecss.com/navbar.html);
+
+###Ссылки справа
+
+```html
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+
+```
+
+###Ссылки слева
+
+```html
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo right">Logo</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+
+```
+
+###Центрирование лого
+
+```html
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Logo</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+
+```
+
+###Активные списки меню
+
+Для активной ссылки в меню достаточно добавить class **li.active**.
+
+ + [Прочитать и посмотреть пример](http://materializecss.com/navbar.html);
+
+###Зафиксированная панель навигации
+
+Для фиксации меню достаточно добавить class **navbar-fixed**.
+
+
+
+
+###Выпадающее меню на панели навигации
+
+По умолчанию выпдающие меню срабатывает при **hover**, чтобы отключить нужно прописать { hover: false } в  dropdown() function.
+
+```html
+
+	<!-- Dropdown Structure -->
+	<ul id="dropdown1" class="dropdown-content">
+	  <li><a href="#!">one</a></li>
+	  <li><a href="#!">two</a></li>
+	  <li class="divider"></li>
+	  <li><a href="#!">three</a></li>
+	</ul>
+	<nav>
+	  <div class="nav-wrapper">
+	    <a href="#!" class="brand-logo">Logo</a>
+	    <ul class="right hide-on-med-and-down">
+	      <li><a href="sass.html">Sass</a></li>
+	      <li><a href="badges.html">Components</a></li>
+	      <!-- Dropdown Trigger -->
+	      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+	    </ul>
+	  </div>
+	</nav>
+
+```
+
+```js
+
+	$(".dropdown-button").dropdown();
+
+```
+
+###Поисковая строка
+
+Вы можете добавить поисковую форму в блок навигации.
+
+```html
+
+  <nav>
+    <div class="nav-wrapper">
+      <form>
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div>
+      </form>
+    </div>
+  </nav>
+
+```
+
+###Мобильное меню
+
+ + [Прочитать и посмотреть пример](http://materializecss.com/navbar.html);
+
+```html
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    </div>
+  </nav>
+
+```
+
+```js
+
+	$(".button-collapse").sideNav()
 
 ```
